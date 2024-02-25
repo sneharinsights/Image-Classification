@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: antiquewhite;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-family: "Edu TAS Beginner", cursive;
+  font-family: "Playpen Sans", cursive;
+}
+
+.main-container {
+  padding: 0 3rem;
+}
+
+.top-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.search input {
+  width: 27rem;
+  padding: 1rem 0.5rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.search-btn,
+.add-img-btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: black;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.addition-btn {
+  text-align: center;
+  margin-top: 2.2rem;
+}
+
+label[for="images"] {
+  font-size: 2.2rem;
+}
+
+label[for="images-to-add"],
+label[for="select-the-image"] {
+  font-size: 1.8rem;
+}
+
+.file-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 1.2rem;
+}
+
+.choose-image {
+  padding-left: 6rem;
+}
+
+.take-name-holder {
+  width: 17rem;
+  padding: 1rem 0.4rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.take-name {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.custom-select,
+.custom-select-to-add {
+  display: inline-block;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  appearance: none; /* Remove default arrow in some browsers */
+  text-align: center;
+}
+
+.select-class-to-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.custom-select:focus {
+  outline: none;
+  border-color: #666;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.custom-select option {
+  background-color: #fff;
+  color: #333;
+}
+
+.main-heading {
+  font-size: 6rem;
+}
+
+.class-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.class-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  max-width: 40rem;
+}
+
+.addition-of-the-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.add-image {
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  /* max-width: 40rem; */
+  width: 55.5rem;
+  padding: 4rem;
+  margin: 2.4rem 0 4rem 0;
+  background-color: #ccc;
+}
+
+.class-image img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 20px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.img-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.image-class-heading {
+  font-size: 2.8rem;
+  margin: 2rem 0 1.5rem 0;
+}

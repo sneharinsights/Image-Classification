@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;600&family=Playpen+Sans:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="top-container">
+        <div class="main-heading">
+          <h1>Images</h1>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search by name" id="input-type" />
+          <button class="search-btn" id="search-button" onclick="searchImage()">
+            Search
+          </button>
+        </div>
+        <div class="select-class">
+          <label for="images">Filter by image category:</label>
+
+          <select
+            name="images"
+            id="images"
+            class="custom-select"
+            onchange="selectImagetype()"
+          >
+            <option value="all" selected>All</option>
+            <option value="animals">Animals</option>
+            <option value="birds">Birds</option>
+            <option value="beaches">Beaches</option>
+            <option value="forests">Forests</option>
+          </select>
+        </div>
+      </div>
+      <div class="animals">
+        <div class="image-class-heading">
+          <h2>Animals</h2>
+        </div>
+        <div class="class-images">
+          <div class="class-image" data-title="rat">
+            <img src="Images/Animals/animal-1238228_1920.jpg" alt="rat-image" />
+            <p class="img-heading">Rat</p>
+          </div>
+          <div class="class-image" data-title="cat">
+            <img src="Images/Animals/cat-2083492_1920.jpg" alt="cat-image" />
+            <p class="img-heading">Cat</p>
+          </div>
+          <div class="class-image" data-title="elephant">
+            <img
+              src="Images/Animals/elephant-1822636_1920.jpg"
+              alt="elephant-image"
+            />
+            <p class="img-heading">Elephant</p>
+          </div>
+          <div class="class-image" data-title="leopard">
+            <img
+              src="Images/Animals/leopard-515509_1920.jpg"
+              alt="leopard-image"
+            />
+            <p class="img-heading">Leopard</p>
+          </div>
+        </div>
+      </div>
+      <div class="birds">
+        <div class="image-class-heading">
+          <h2>Birds</h2>
+        </div>
+        <div class="class-images">
+          <div class="class-image" data-title="eagle">
+            <img src="Images/Birds/eagle-339128_1920.jpg" alt="eagle" />
+            <p class="img-heading">Eagle</p>
+          </div>
+          <div class="class-image" data-title="kingfisher">
+            <img
+              src="Images/Birds/kingfisher-2046453_1920.jpg"
+              alt="kingfisher"
+            />
+            <p class="img-heading">Kingfisher</p>
+          </div>
+          <div class="class-image" data-title="parrot">
+            <img src="Images/Birds/parrot-3367817_1920.jpg" alt="Parrot" />
+            <p class="img-heading">Parrot</p>
+          </div>
+          <div class="class-image" data-title="Peacock">
+            <img src="Images/Birds/peacock-7166818_1920.jpg" alt="Peacock" />
+            <p class="img-heading">Peacock</p>
+          </div>
+          <div class="class-image" data-title="crow">
+            <img src="Images/Birds/raven-2162966_1920.jpg" alt="Crow" />
+            <p class="img-heading">Crow</p>
+          </div>
+        </div>
+      </div>
+      <div class="beaches">
+        <div class="image-class-heading">
+          <h2>Beaches</h2>
+        </div>
+        <div class="class-images">
+          <div class="class-image" data-title="beach1">
+            <img src="Images/Beach/beach-1236581_1920.jpg" alt="beach1" />
+            <p class="img-heading">First Beach</p>
+          </div>
+          <div class="class-image" data-title="beach2">
+            <img src="Images/Beach/beach-1824855_1920.jpg" alt="beach2" />
+            <p class="img-heading">Second Beach</p>
+          </div>
+          <div class="class-image" data-title="beach3">
+            <img src="Images/Beach/beach-2179624_1920.jpg" alt="beach3" />
+            <p class="img-heading">Third Beach</p>
+          </div>
+          <div class="class-image" data-title="beach4">
+            <img src="Images/Beach/maldives-1993704_1920.jpg" alt="maldives" />
+            <p class="img-heading">Maldives Beach</p>
+          </div>
+        </div>
+      </div>
+      <div class="forests">
+        <div class="image-class-heading">
+          <h2>Forest</h2>
+        </div>
+        <div class="class-images">
+          <div class="class-image" data-title="forest1">
+            <img src="Images/Forest/forest-438432_1920.jpg" alt="forest1" />
+            <p class="img-heading">First Forest</p>
+          </div>
+          <div class="class-image" data-title="forest2">
+            <img src="Images/Forest/forest-56930_1280.jpg" alt="forest2" />
+            <p class="img-heading">Second Forest</p>
+          </div>
+          <div class="class-image" data-title="forest3">
+            <img
+              src="Images/Forest/rainforest-3119822_1920.jpg"
+              alt="rain forest"
+            />
+            <p class="img-heading">Rain Forest</p>
+          </div>
+          <div class="class-image" data-title="forest4">
+            <img src="Images/Forest/road-1072821_1920.jpg" alt="road forest" />
+            <p class="img-heading">Road Forest</p>
+          </div>
+        </div>
+      </div>
+      <div class="addition-of-the-card">
+        <div class="image-class-heading">
+          <h2>Want to add Image?</h2>
+        </div>
+        <div class="add-image">
+          <div class="select-class-to-add">
+            <label for="images-to-add">Choose Image category:</label>
+
+            <select
+              name="images"
+              id="images-to-add"
+              class="custom-select-to-add"
+            >
+              <option value="animals">Animals</option>
+              <option value="birds">Birds</option>
+              <option value="beaches">Beaches</option>
+              <option value="forests">Forests</option>
+            </select>
+          </div>
+          <div class="file-input">
+            <label for="select-the-image">Select the image</label>
+
+            <input
+              type="file"
+              id="fileInput"
+              accept="image/*"
+              class="choose-image"
+            />
+          </div>
+          <div class="take-name">
+            <label for="select-the-image">Name the image</label>
+
+            <input
+              type="text"
+              placeholder="Enter the name"
+              id="take-name-holder"
+              class="take-name-holder"
+            />
+          </div>
+          <div class="addition-btn">
+            <button class="add-img-btn" type="button" onclick="uploadImage()">
+              Add Image
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
